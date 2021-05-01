@@ -10,13 +10,15 @@ body{
 .logo{
       padding: 1rem;
       box-shadow: 0 0 .5rem rgba(0, 0, 0, 25);
-      position: relative;     
+      position: relative;  
+      width: 93%;   
 }
 .logoentreprise{
            display: flex;
            align-items: center;
            margin: auto;
            object-fit: cover;
+           width: 50%;
 }
 .lieu{
       display: flex;
@@ -52,8 +54,8 @@ h1{
       cursor: pointer;
       transform: scale(1);
       transition: transform 400ms;
-      width: ;
-      height: ;
+      width: 35%;
+      height: 45px;
 }
 .boutonexplorer:hover{
       transform: scale(1.15);
@@ -72,7 +74,9 @@ h1{
 .menufonctionnement1{
       display: flex;
       background-color: #f6f6f6;
-      padding: 10px 10px 10px 10px;
+      box-shadow: 1px 1px 1px 1px #f6f6f6;
+      width: 100%;
+      height: 32px;
 }
 .restaurant{
       background-color: #f6f6f6;
@@ -83,13 +87,70 @@ h1{
 .restaurant2{
       display: flex;
       width: 100%;
+      flex-direction: column;
+      padding-bottom: 5%;
 }
 .restaurant1{
       background-color: white;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      align-self: center;
+      border-radius: 20px 20px 20px 20px;
+      cursor: pointer;
+      margin-bottom: 5%;
+}
+.motnouveau{
+      position: absolute;
+      color: white;
+      background-color: #99E2D0;
+      display: flex;
+      align-self: flex-end;
+      margin: 10px;
 }
 .photosrestaurant{
       display: flex;
       width: 100%;
-      height: 100px;
+      height: 13rem;
       object-fit: cover;
+      border-radius: 20px 20px 0 0;
+}
+.nomlieuicone{
+      display: flex;
+      justify-content: space-between;
+}
+.nometlieu{
+      display: flex;
+      flex-direction: column;
+}
+.fa-heart{
+      align-self: center;
+      width: 10%;
+      animation: normal;
+}
+.fa-heart :hover{
+      color: #9356DC;
+}
+footer{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(16, 20, 20);
+      color: white;
+}
+.logoentreprise2{
+      margin: 5% 0 0 5%;
+}
+.optionpieddepage{
+      list-style: none;
+      margin: 0 5%  5px 0;
+}
+.contact{
+      list-style: none;
+      margin: 0 5% 0 0;
+}
+.fa-utensils{
+      padding-right: 10px;
+}
+.fa-hands-helping{
+      padding-right: 5px;
 }
