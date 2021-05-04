@@ -1,28 +1,109 @@
+@font-face {
+       font-family: roboto,sans-serif ;
+       src: url("police/roboto/roboto-regular.ttf");
+}
+body{
+       margin-left: 5%;
+       margin-right: 5%;
+       font-family: Roboto, sans-serif;
+}
+header{
+      display: flex;
+      width: 100%;
+}
+.flecheretourmenu{
+       display: flex;
+       align-items: center;
+}
+.fa-arrow-left{
+      color: grey;
+}
+.logo{
+       position: relative;  
+       width: 93%;   
+}
+.logoentreprise{
+       display: flex;
+       align-items: center;
+       margin: auto;
+       object-fit: cover;
+       width: 50%;
+}
 .photorestaurant{
-               width: 95%;
-               height: 50px;
-               object-fit: cover;
+       width: 100%;
+        height: 25rem;
+       object-fit: cover;
+}
+main{
+       background-color: #f6f6f6;
+       border-radius: 20% 20% 0 0;
+}
+.titrecoeur{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+h2{
+       border-bottom: 4px mediumaquamarine solid;
+       width: 8%;
+       padding: 1%;
+       margin-left: 2%;
+}
+.plat{
+       display: flex;
+       flex-direction: column;
+        background-color: white;
+        margin: 2%;
+        border: 2px inherit;
+        width: 95%;
+        border-radius: 9% 9% 9% 9%;
+}
+.platprincipale{
+      font-weight: bold;
+      margin: 2% 0 0 2%;
+      font-size: 19px;
+}
+.sauceplatprix{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 5% 0 2%;
+}
+.prix{
+      font-weight: bold;
+}
+.boutoncommander{
+      background-color: #b83dba;
+      border-radius: 20px 20px 20px 20px;
+      color: white;
+      box-shadow: 0 6px 4px 6px rgba(0, 0, 0, 0.25) ;
+      cursor: pointer;
+      width: 35%;
+      height: 45px;
+      margin: 5% 0 5% 35%;
 }
 footer{
-               display: flex;
-               flex-direction: column;
-               background-color: rgb(16, 20, 20);
-               color: white;
-         }
-         .logoentreprise2{
-               margin: 5% 0 0 5%;
-         }
-         .optionpieddepage{
-               list-style: none;
-               margin: 0 5%  5px 0;
-         }
-         .contact{
-               list-style: none;
-               margin: 0 5% 0 0;
-         }
-         .fa-utensils{
-               padding-right: 10px;
-         }
-         .fa-hands-helping{
-               padding-right: 5px;
-         }
+       display: flex;
+       flex-direction: column;
+        background-color: rgb(16, 20, 20);
+       color: white;
+}
+ .logoentreprise2{
+       margin: 2% 0 0 5%;
+  }
+ .optionpieddepage{
+       list-style: none;
+       margin: 0 5%  5px 0;
+ }
+.contact{
+       list-style: none;
+       margin: 0 5% 0 0;
+       color: inherit;
+       text-decoration: none;
+}
+.fa-utensils{
+       padding-right: 10px;
+}
+.fa-hands-helping{
+       padding-right: 5px;
+}
