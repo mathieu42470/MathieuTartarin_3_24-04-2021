@@ -154,9 +154,10 @@ h1{
 .fa-heart{
       align-self: center;
       width: 10%;
-      animation: normal;
+      color: black;
 }
-.fa-heart :hover{
+.fa-heart:hover{
+      transform: scale(1.13);
       color: #9356DC;
 }
 footer{

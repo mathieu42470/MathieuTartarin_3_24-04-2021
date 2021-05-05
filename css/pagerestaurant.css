@@ -49,6 +49,14 @@ h2{
        padding: 1%;
        margin-left: 2%;
 }
+.fa-heart{
+       color: black;
+       margin-right: 5%;
+}
+.fa-heart:hover{
+       transform: scale(1.13);
+       color: #9356DC;
+}
 .plat{
         display: flex;
         flex-direction: column;
