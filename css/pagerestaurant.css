@@ -50,8 +50,8 @@ h2{
        margin-left: 2%;
 }
 .plat{
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
         background-color: white;
         margin: 2%;
         border: 2px inherit;
