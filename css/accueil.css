@@ -1,6 +1,8 @@
 @font-face {
                 font-family: roboto,sans-serif ;
                 src: url("police/roboto/roboto-regular.ttf");
+                font-family: shrikhand,"cursive";
+                src: url("police/shrikhand/Shrikhand-Regular.otf");
 }
 body{
       margin-left: 5%;
@@ -151,6 +153,9 @@ h1{
       display: flex;
       flex-direction: column;
 }
+h4{
+      font-weight: normal;
+}
 .fa-heart{
       align-self: center;
       width: 10%;
@@ -168,6 +173,7 @@ footer{
 }
 .logoentreprise2{
       margin: 2% 0 0 5%;
+      font-family: shrikhand, "cursive";
 }
 .optionpieddepage{
       list-style: none;
@@ -184,4 +190,35 @@ footer{
 }
 .fa-hands-helping{
       padding-right: 5px;
+}
+
+@media (min-width: 600px)
+{
+      .fonctionnement{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+      }
+      .menufonctionnement{
+            display: flex;
+            flex-direction: row;
+            width: 37%;
+      }
+      .restaurant{
+            display: flex;
+            flex-direction: column;
+      }
+      .restaurant2{
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            align-content: space-between;
+            margin:0%
+      }
+      .restaurant1{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 3%;
+      }
 }

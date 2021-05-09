@@ -1,6 +1,8 @@
 @font-face {
        font-family: roboto,sans-serif ;
        src: url("police/roboto/roboto-regular.ttf");
+       font-family: shrikhand,"cursive";
+       src: url("police/shrikhand/Shrikhand-Regular.otf");
 }
 body{
        margin-left: 5%;
@@ -57,6 +59,10 @@ h2{
        transform: scale(1.13);
        color: #9356DC;
 }
+.menue{
+       display: flex;
+       flex-direction: column;
+}
 .plat{
         display: flex;
         flex-direction: column;
@@ -98,6 +104,7 @@ footer{
 }
  .logoentreprise2{
        margin: 2% 0 0 5%;
+       font-family: shrikhand, "cursive";
   }
  .optionpieddepage{
        list-style: none;
@@ -114,4 +121,24 @@ footer{
 }
 .fa-hands-helping{
        padding-right: 5px;
+}
+
+@media (min-width: 1024px)
+{
+       .menue{
+              display: flex;
+              flex-direction: row;
+              width: 95%;
+       }
+       .menuentrées{
+              width: 30%;
+              margin: 0 3% 0 4%;
+       }
+       .menueplats{
+              width: 30%;
+              margin-right: 3%;
+       }
+       .menuedessert{
+              width: 30%;
+       }
 }
