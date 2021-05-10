@@ -156,14 +156,32 @@ h1{
 h4{
       font-weight: normal;
 }
-.fa-heart{
+.coeur{
+      display: flex;
       align-self: center;
       width: 10%;
-      color: black;
+      font-size: 30px;
 }
-.fa-heart:hover{
-      transform: scale(1.13);
-      color: #9356DC;
+.coeur1{
+      background-color: white;
+      position: relative;
+      z-index: 1;
+      opacity: (1);
+}
+.coeur2{
+      font-weight: 900;
+      position: absolute;
+      opacity: (0);
+      background-color: #9356DC;
+}
+.coeur1:active{
+      position: absolute;
+      opacity: (0);
+}
+.coeur2:active{
+      content:"";
+      background-color: #9356DC;
+      position: relative;
 }
 footer{
       display: flex;
