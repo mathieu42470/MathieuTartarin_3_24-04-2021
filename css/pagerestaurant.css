@@ -11,7 +11,11 @@ body{
 }
 header{
       display: flex;
+      flex-direction: column;
       width: 100%;
+}
+.header{
+       display: flex;
 }
 .flecheretourmenu{
        display: flex;
@@ -38,7 +42,13 @@ header{
 }
 main{
        background-color: #f6f6f6;
-       border-radius: 20% 20% 0 0;
+       border-radius: 5% 5% 0 0;
+       width: 100%;
+       position: relative;
+       margin-top: -55px;
+}
+h1{
+       font-size: 25px;
 }
 .titrecoeur{
        display: flex;
@@ -132,7 +142,7 @@ h2{
 }
 .plat{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: white;
         margin: 2%;
         border: 2px inherit;
@@ -144,15 +154,19 @@ h2{
       font-weight: bold;
       margin: 2% 0 0 2%;
       font-size: 19px;
-}
-.sauceplatprix{
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 5% 0 2%;
+      flex-direction: column;
+}
+p{
+       font-weight: normal;
+       font-size: 15px;
 }
 .prix{
       font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
 }
 .souhait{
        display: flex;
