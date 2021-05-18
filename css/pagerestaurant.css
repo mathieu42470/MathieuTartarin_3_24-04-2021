@@ -42,13 +42,16 @@ header{
 }
 main{
        background-color: #f6f6f6;
-       border-radius: 5% 5% 0 0;
+       border-radius: 20px 20px 0 0;
        width: 100%;
        position: relative;
        margin-top: -55px;
 }
 h1{
        font-size: 25px;
+       margin: 5%;
+       font-family: shrikhand, "cursive";
+       font-weight: bold;
 }
 .titrecoeur{
        display: flex;
@@ -60,6 +63,7 @@ h2{
        width: 8%;
        padding: 1%;
        margin-left: 2%;
+       font-size: normal;
 }
 .coeur{
        display: flex;
@@ -147,19 +151,28 @@ h2{
         margin: 2%;
         border: 2px inherit;
         width: 95%;
-        border-radius: 9% 9% 9% 9%;
+        border-radius: 9px 9px 9px 9px;
         overflow: hidden;
 }
 .platprincipale{
       font-weight: bold;
       margin: 2% 0 0 2%;
-      font-size: 19px;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
+}
+h3{
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       font-size: 19px;
 }
 p{
        font-weight: normal;
        font-size: 15px;
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
 }
 .prix{
       font-weight: bold;
@@ -167,6 +180,7 @@ p{
       justify-content: center;
       align-items: center;
       margin-left: 10%;
+      overflow: hidden;
 }
 .souhait{
        display: flex;
@@ -182,6 +196,9 @@ p{
         justify-content: center;
         transition-duration: .5s;
 }
+.souhaititem{
+       margin: -1rem,-5rem,-1rem,-1rem;
+}
 .souhaititem:hover{
         height: 1.6rem;
         width: 1.6rem;
@@ -190,11 +207,11 @@ p{
         align-items: center;
         justify-content: center;
         border-radius: 100px;
-        transform: rotate(180deg);
         transition-duration: .5s;
 }
 .fa-check-circle{
         color: #99e2d0;
+        margin: -1rem,-5rem,-1rem,-1rem ;
 }
 .boutoncommander{
        opacity: 1;
@@ -208,6 +225,11 @@ p{
       margin: 5% 0 5% 35%;
 }
 .boutoncommander:hover{
+       opacity: 0.75;
+       background: linear-gradient(0deg, #9356dc ,#ff79da);
+       box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25) ;
+}
+.boutoncommander:active{
        opacity: 0.75;
        background: linear-gradient(0deg, #9356dc ,#ff79da);
        box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25) ;
