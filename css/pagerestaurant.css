@@ -145,21 +145,20 @@ h2{
        animation-delay: 6s;
 }
 .plat{
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-        margin: 2%;
-        border: 2px inherit;
-        width: 95%;
-        border-radius: 9px 9px 9px 9px;
-        overflow: hidden;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+       height: 100%; 
+       background-color: white;
+       margin: 2%;
+       border-radius: 15px 15px 15px 15px;
 }
 .platprincipale{
-      font-weight: bold;
-      margin: 2% 0 0 2%;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 100%;  
 }
 h3{
        white-space: nowrap;
@@ -174,44 +173,47 @@ p{
        white-space: nowrap;
        text-overflow: ellipsis;
 }
-.prix{
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 10%;
-      overflow: hidden;
-}
-.souhait{
+.prixsauce{
+       font-weight: bold;
+       margin: 2% 0 0 2%;
        display: flex;
-       justify-content: end;
-       align-items: center;
-       margin: -1rem,-5rem,-1rem,-1rem;
-}
-.souhait:hover{
-        background-color: #99e2d0;
-        width: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-duration: .5s;
-}
-.souhaititem{
-       margin: -1rem,-5rem,-1rem,-1rem;
-}
-.souhaititem:hover{
-        height: 1.6rem;
-        width: 1.6rem;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100px;
-        transition-duration: .5s;
+       justify-content: space-between;
+       flex-direction: row;
+       overflow: hidden;
+       width: 100%;
 }
 .fa-check-circle{
-        color: #99e2d0;
-        margin: -1rem,-5rem,-1rem,-1rem ;
+       color: #8ee2ff;
+       border: 1px solid rgba(255, 255, 255, 0.952);
+       background-color: white;
+       border-radius: 50%;
+       width: 25%;       
+       margin: auto;
+       display: flex;
+       align-items: center;
+}
+.check{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 0px 15px 15px 0px;
+       color:#fff;
+       background-color:  rgb(160, 228, 224);;
+       overflow: hidden;
+       margin: 0%;
+}
+.plat:active .check .fas{
+       transition:  transform 0.3 lenear;
+       transform: rotate(360);
+}
+.plat:active .check{
+       transition: width 0.3s linear;
+       width: 25%;
+       cursor: pointer;
+}
+.plat:not(:active) .check{
+       transition: width 0.3s linear;
+       width: 0%;
 }
 .boutoncommander{
        opacity: 1;
@@ -278,5 +280,18 @@ footer{
        }
        .menuedessert{
               width: 30%;
+       }
+       .plat:hover .check .fas{
+              transition:  transform 0.3 lenear;
+              transform: rotate(360);
+       }
+       .plat:hover .check{
+              transition: width 0.3s linear;
+              width: 25%;
+              cursor: pointer;
+       }
+       .plat:not(:hover) .check{
+              transition: width 0.3s linear;
+              width: 0%;
        }
 }
