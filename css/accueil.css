@@ -5,8 +5,6 @@
                 src: url("police/shrikhand/Shrikhand-Regular.otf");
 }
 body{
-      margin-left: 5%;
-      margin-right: 5%;
       font-family: Roboto, sans-serif;
 }
 .animation{
@@ -119,8 +117,9 @@ h1{
       cursor: pointer;
       transform: scale(1);
       transition: transform 400ms;
-      width: 35%;
+      width: 45%;
       height: 45px;
+      white-space: nowrap;
 }
 .boutonexplorer:hover{
       transform: scale(1.01);
@@ -142,28 +141,40 @@ h1{
       display: flex;
       list-style: none;
       flex-direction: row;
-      width: 100%;
-      
+      width: 100%; 
 }
 .menufonctionnement1{
       display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+}
+.phrasefonctionnement{
+      display: flex;
       background-color: #f6f6f6;
-      box-shadow: 1px 1px 1px 1px #f6f6f6;
-      width: 130%;
-      height: 45px;
+      width: 18rem;
+      height: 50px;
       box-shadow: 1px 1px 1px 1px rgba(0,0,0,.125);
-      margin: 0 0 8% 4%;
+      margin: 0 0 8% 0;
       align-items: center;
       font-size: 19px;
-      border-radius: 9% 9% 9% 9%;
+      border-radius: 9px 9px 9px 9px;
+      position: relative;
+      white-space: nowrap;
 }
 .chiffre{
-      border-radius: 100%;
-      background-color: #9356DC;
-      color: white;
-      position: relative;
-      width: 9%;
-      text-align: center;
+       border-radius: 100px;
+       background-color: #9356DC;
+       color: white;
+       position: absolute;
+       width: 22.5px;
+       height: 22.5px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -13px;
+       margin-top: 14px;
 }
 .fa-mobile-alt{
       margin: 5%;
@@ -233,7 +244,7 @@ h4{
       background-color: transparent;
       border: 0 solid transparent;
       position: absolute;
-      width: 50%;
+      width: 70%;
       height: 100px; 
       margin-left: 40%;  
 }
@@ -290,7 +301,6 @@ footer{
       margin: 2% 0 0 5%;
       font-family: shrikhand, "cursive";
       background-color: transparent;
-      
 }
 .optionpieddepage{
       list-style: none;
@@ -311,6 +321,9 @@ footer{
 
 @media (min-width: 600px)
 {
+      .boutonexplorer{
+            width: 25%;
+      }
       .fonctionnement{
             display: flex;
             flex-direction: column;
@@ -339,6 +352,6 @@ footer{
             margin-left: 3%;
       }
       .coeur{
-            margin-left: 10%;
+            width: 2%
       }
 }
