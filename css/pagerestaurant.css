@@ -135,6 +135,10 @@ h2{
               transform: scale(1);
        }
 }
+.menueplat{
+       width: 100%;
+       overflow: hidden;
+}
 .menuentrées{
        animation-delay: 0s;
 }
@@ -153,12 +157,14 @@ h2{
        background-color: white;
        margin: 2%;
        border-radius: 15px 15px 15px 15px;
+       overflow: hidden;
 }
-.platprincipale{
+.platprincipal{
        display: flex;
        flex-direction: column;
        width: 100%;
-       height: 100%;  
+       height: 100%;
+       overflow: hidden;  
 }
 h3{
        white-space: nowrap;
@@ -166,12 +172,9 @@ h3{
        overflow: hidden;
        font-size: 19px;
 }
-p{
-       font-weight: normal;
-       font-size: 15px;
+.accompagnementprix{
+       width: 100%;
        overflow: hidden;
-       white-space: nowrap;
-       text-overflow: ellipsis;
 }
 .prixsauce{
        font-weight: bold;
@@ -180,14 +183,30 @@ p{
        justify-content: space-between;
        flex-direction: row;
        overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
        width: 100%;
+}
+p{
+       font-weight: normal;
+       font-size: 15px;
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       width: 100%;
+}
+.prix{
+       overflow: hidden;
+       width: 50%;
+       display: flex;
+       justify-content: end;
+       margin-right: 9%;
 }
 .fa-check-circle{
        color: #8ee2ff;
        border: 1px solid rgba(255, 255, 255, 0.952);
        background-color: white;
-       border-radius: 50%;
-       width: 25%;       
+       border-radius: 50%;  
        margin: auto;
        display: flex;
        align-items: center;
