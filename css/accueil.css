@@ -6,8 +6,6 @@
 }
 body{
       font-family: Roboto, sans-serif;
-      margin-left: 5%;
-       margin-right: 5%;
        width: 100%;
 }
 .animation{
@@ -72,20 +70,23 @@ body{
 }
 .logo{
       padding: 1rem;
-      position: relative;  
-      width: 93%;   
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;   
 }
 .logoentreprise{
            display: flex;
            align-items: center;
            margin: auto;
            object-fit: cover;
-           width: 50%;
+           width: 100%;
 }
 .lieu{
       display: flex;
       flex-direction: column;
       text-align: center;
+      width: 100%;
 }
 .lieu2{
       display: flex;
@@ -139,7 +140,11 @@ h1{
 .fonctionnement{
       display: flex;
       flex-direction: column;
+      justify-content: center;
       width: 100%;
+}
+h2{
+      margin-left:6%;
 }
 .menufonctionnement{
       display: flex;
@@ -217,11 +222,14 @@ h1{
 }
 .motnouveau{
       position: absolute;
-      color: white;
+      color:green;
       background-color: #99E2D0;
       display: flex;
       align-self: flex-end;
       margin: 10px;
+      height: 18px;
+      width: 70px;
+      justify-content: center;
 }
 .photosrestaurant{
       display: flex;
@@ -238,6 +246,10 @@ h1{
 .nometlieu{
       display: flex;
       flex-direction: column;
+      padding-left: 5%;
+}
+h3{
+      height: 0px;
 }
 h4{
       font-weight: normal;
@@ -301,21 +313,25 @@ footer{
       flex-direction: column;
       background-color: rgb(16, 20, 20);
       color: white;
+      width: 100%;
 }
 .logoentreprise2{
       margin: 2% 0 0 5%;
       font-family: shrikhand, "cursive";
       background-color: transparent;
+      width: 100%;
 }
 .optionpieddepage{
       list-style: none;
       margin: 0 5%  5px 0;
+      width: 100%;
 }
 .contact{
       list-style: none;
       margin: 0 5% 0 0;
       color: inherit;
       text-decoration: none;
+      width: 100%;
 }
 .fa-utensils{
       padding-right: 10px;
@@ -332,7 +348,11 @@ footer{
       .fonctionnement{
             display: flex;
             flex-direction: column;
+            align-items: center;
             width: 95%;
+      }
+      h2{
+            margin: 0%;
       }
       .menufonctionnement{
             display: flex;
@@ -342,6 +362,9 @@ footer{
       .restaurant{
             display: flex;
             flex-direction: column;
+      }
+      .titrerestaurant{
+            margin: 2% 0 2% 2%;
       }
       .restaurant2{
             display: flex;
