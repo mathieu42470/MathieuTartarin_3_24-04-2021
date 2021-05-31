@@ -5,9 +5,8 @@
        src: url("police/shrikhand/Shrikhand-Regular.otf");
 }
 body{
-       margin-left: 5%;
-       margin-right: 5%;
        font-family: Roboto, sans-serif;
+       margin: 0;
 }
 header{
       display: flex;
@@ -26,14 +25,14 @@ header{
 }
 .logo{
        position: relative;  
-       width: 93%;   
+       width: 100%;   
 }
 .logoentreprise{
        display: flex;
-       align-items: center;
+       justify-content: center;
        margin: auto;
        object-fit: cover;
-       width: 50%;
+       width: 100%;
 }
 .photorestaurant{
        width: 100%;
@@ -59,12 +58,13 @@ h1{
        align-items: center;
 }
 h2{
-       border-bottom: 4px mediumaquamarine solid;
-       width: 8%;
+       border-bottom: 4px #99e2d0 solid;
+       width: 13%;
        padding: 1%;
        margin-left: 2%;
        font-size: normal;
 }
+
 .coeur{
        display: flex;
        align-items: center;
@@ -162,7 +162,8 @@ h2{
 .platprincipal{
        display: flex;
        flex-direction: column;
-       width: 100%;
+       justify-content: center;
+       width: 95%;
        height: 100%;
        overflow: hidden;  
 }
@@ -171,6 +172,7 @@ h3{
        text-overflow: ellipsis;
        overflow: hidden;
        font-size: 19px;
+       margin-left: 5%;
 }
 .accompagnementprix{
        width: 100%;
@@ -186,14 +188,16 @@ h3{
        white-space: nowrap;
        text-overflow: ellipsis;
        width: 100%;
+       align-items: center;
 }
-p{
+.sauce{
        font-weight: normal;
        font-size: 15px;
        overflow: hidden;
        white-space: nowrap;
        text-overflow: ellipsis;
        width: 100%;
+       margin-left: 5%;
 }
 .prix{
        overflow: hidden;
@@ -244,6 +248,7 @@ p{
       width: 35%;
       height: 45px;
       margin: 5% 0 5% 35%;
+      border: 0;
 }
 .boutoncommander:hover{
        opacity: 0.75;
@@ -265,6 +270,7 @@ footer{
        margin: 2% 0 0 5%;
        font-family: shrikhand, "cursive";
        background-color: transparent;
+       width: 100%;
  }
  .optionpieddepage{
        list-style: none;
@@ -301,15 +307,25 @@ footer{
        .menuedessert{
               width: 30%;
        }
-       .plat:hover .check .fas{
-              transition:  transform 0.3 lenear;
-              transform: rotate(360);
-       }
        .plat:hover .check{
-              transition: width 0.3s linear;
-              width: 25%;
-              cursor: pointer;
+              -webkit-transition: -webkit-transform .8s linear;
+              -ms-transition: -ms-transform .8s linear;
+              transition: transform .8s linear;  
+              color: #ff79da;
+              transform:rotate(360deg);
+              -ms-transform:rotate(360deg);
+              -webkit-transform:rotate(360deg);
        }
+       .plat:hover .check .fas{
+              -webkit-transition: -webkit-transform .8s linear;
+              -ms-transition: -ms-transform .8s linear;
+              transition: transform .8s linear;  
+              color: #ff79da;
+              transform:rotate(360deg);
+              -ms-transform:rotate(360deg);
+              -webkit-transform:rotate(360deg);
+       }
+       
        .plat:not(:hover) .check{
               transition: width 0.3s linear;
               width: 0%;
