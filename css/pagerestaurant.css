@@ -140,10 +140,25 @@ h2{
        }
 }
 .menueplat{
+       
        width: 95%;
        overflow: hidden;
-       animation: itemappear;
+       
 } 
+
+.menueplats{
+       animation: fadein 2s;
+}
+
+@keyframes fadein{
+       from{
+              opacity: 0;
+       }
+       to{
+              opacity: 1;
+       }       
+}
+
 .plat{
        display: flex;
        flex-direction: row;
