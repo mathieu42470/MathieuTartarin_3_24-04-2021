@@ -140,7 +140,7 @@ h2{
        }
 }
 .menueplat{
-       width: 100%;
+       width: 95%;
        overflow: hidden;
        animation: itemappear;
 } 
@@ -224,24 +224,23 @@ h3{
 
 .plat:active .check .fas{
        -webkit-transition: -webkit-transform .8s linear;
-         -ms-transition: -ms-transform .8s linear;
-        transition: transform .8s linear;  
-        color: #ff79da;
-        transform:rotate(360deg);
-        -ms-transform:rotate(360deg);
-        -webkit-transform:rotate(360deg);
+       -ms-transition: -ms-transform .8s linear;
+       transition: transform .8s linear;  
+       color: #8ee2ff;
+       transform:rotate(360deg);
+       -ms-transform:rotate(360deg);
+       -webkit-transform:rotate(360deg);
 }
 .plat:active .check{
        -webkit-transition: -webkit-transform .8s linear;
-        -ms-transition: -ms-transform .8s linear;
-        transition: transform .8s linear;  
-        color: #ff79da;
-        transform:rotate(360deg);
-        -ms-transform:rotate(360deg);
-        -webkit-transform:rotate(360deg);
-       transition: width 0.3s linear;
-       width: 25%;
-       cursor: pointer;
+       -ms-transition: -ms-transform .8s linear;
+       transition: transform .8s linear;  
+       transform:rotate(0deg);
+       -ms-transform:rotate(0deg);
+       -webkit-transform:rotate(0deg);
+        transition: width 0.3s linear;
+        width: 25%;
+        cursor: pointer;
 }
 .plat:not(:active) .check{
        transition: width 0.3s linear;
@@ -320,7 +319,7 @@ footer{
               -webkit-transition: -webkit-transform .8s linear;
               -ms-transition: -ms-transform .8s linear;
               transition: transform .8s linear;  
-              color: #ff79da;
+              color: #8ee2ff;
               transform:rotate(360deg);
               -ms-transform:rotate(360deg);
               -webkit-transform:rotate(360deg);
@@ -329,13 +328,12 @@ footer{
               -webkit-transition: -webkit-transform .8s linear;
               -ms-transition: -ms-transform .8s linear;
               transition: transform .8s linear;  
-              color: #ff79da;
-              transform:rotate(360deg);
-              -ms-transform:rotate(360deg);
-              -webkit-transform:rotate(360deg);
+              transform:rotate(0deg);
+              -ms-transform:rotate(0deg);
+              -webkit-transform:rotate(0deg);
                transition: width 0.3s linear;
                width: 25%;
-              cursor: pointer;
+               cursor: pointer;
        }
        .plat:not(:hover) .check{
               transition: width 0.3s linear;
