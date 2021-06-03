@@ -145,9 +145,33 @@ h2{
        overflow: hidden;
        
 } 
+.menuentrées{
+       animation: fadein 0s;
+}
+
+@keyframes fadein{
+       from{
+              opacity: 1;
+       }
+       to{
+              opacity: 1;
+       }       
+}
 
 .menueplats{
-       animation: fadein 2s;
+       animation: fadein 3s;
+}
+
+@keyframes fadein{
+       from{
+              opacity: 0;
+       }
+       to{
+              opacity: 1;
+       }       
+}
+.menuedessert{
+       animation: fadein 6s;
 }
 
 @keyframes fadein{
@@ -293,7 +317,7 @@ footer{
        margin: 2% 0 0 5%;
        font-family: shrikhand, "cursive";
        background-color: transparent;
-       width: 100%;
+       width: 95%;
  }
  .menupieddelapage{
        margin: 2% 0 0 0 ;

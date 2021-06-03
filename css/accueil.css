@@ -70,7 +70,6 @@ body{
       }
 }
 .logo{
-      padding: 1rem;
       position: relative;
       display: flex;
       justify-content: center;
@@ -199,6 +198,14 @@ h2{
       margin: 5%;
       color: #9356DC;
 }
+.rest{
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin: 3%;
+      background-color: white;
+      border-radius: 20px 20px 20px 20px;
+}
 .restaurant{
       background-color: #f6f6f6;
       display: flex;
@@ -215,7 +222,7 @@ h2{
       background-color: white;
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       align-self: center;
       border-radius: 20px 20px 20px 20px;
       cursor: pointer;
@@ -264,9 +271,9 @@ h4{
       background-color: transparent;
       border: 0 solid transparent;
       position: absolute;
-      width: 70%;
+      width: 30px;
       height: 100px; 
-      margin-left: 40%;  
+      margin-left: 79%;  
 }
 
 .coeur .coeur1, .coeur .coeur2{
@@ -322,7 +329,7 @@ footer{
       margin: 2% 0 0 5%;
       font-family: shrikhand, "cursive";
       background-color: transparent;
-      width: 100%;
+      width: 95%;
 }
 .menupieddelapage{
       margin: 2% 0 0 0 ;
@@ -344,14 +351,6 @@ footer{
       padding-right: 5px;
 }
 
-.rest{
-      display: flex;
-flex-direction: column;
-width: 49%;
-margin: 3%;
-background-color: #f6f6f6;
-
-}
 
 @media (min-width: 600px)
 {
@@ -371,7 +370,17 @@ background-color: #f6f6f6;
             display: flex;
             flex-direction: row;
             width: 37%;
+            justify-content: center;
       }
+      .rest{
+             display: flex;
+             flex-direction: column;
+             width: 49%;
+             margin: 3%;
+             background-color: white;
+             border-radius: 20px 20px 20px 20px;
+       }
+
       .restaurant{
             display: flex;
             flex-direction: column;
@@ -394,8 +403,9 @@ background-color: #f6f6f6;
             /* margin-left: 3%; */
       }
       .coeur{
-            margin-left: 37%;
-            width: 2%;
+            margin-left: 35%;
+            width: 30px;
+            height:60px;
       }
       .menupieddelapage{
             margin: 2% 0 0 3% ;
